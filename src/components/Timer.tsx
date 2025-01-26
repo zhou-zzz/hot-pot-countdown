@@ -61,9 +61,8 @@ export const Timer: React.FC<TimerProps> = ({ food, onRemove, onUpdate, onReset 
         style={{
           backgroundImage: 'linear-gradient(to right, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.2))',
         }}
-        className={`absolute left-0 top-0 h-full z-0 ${
-          food.status === 'done' ? 'bg-red-100' : ''
-        }`}
+        className={`absolute left-0 top-0 h-full z-0 ${food.status === 'done' ? 'bg-red-100' : ''
+          }`}
       />
 
       <div className="relative z-10 flex items-center justify-between">
@@ -75,12 +74,14 @@ export const Timer: React.FC<TimerProps> = ({ food, onRemove, onUpdate, onReset 
         </div>
 
         <div className="flex gap-2">
-          <button
-            onClick={() => onReset(food.id)}
-            className="text-red-400 hover:text-red-600 transition-colors h-8 w-8 flex items-center justify-center rounded-full hover:bg-red-50"
-          >
-            ↺
-          </button>
+          {food.status === 'done' && (
+            <button
+              onClick={() => onReset(food.id)}
+              className="text-red-400 hover:text-red-600 transition-colors h-8 w-8 flex items-center justify-center rounded-full hover:bg-red-50"
+            >
+              ⟳
+            </button>
+          )}
           <button
             onClick={() => onRemove(food.id)}
             className="text-red-400 hover:text-red-600 transition-colors h-8 w-8 flex items-center justify-center rounded-full hover:bg-red-50"
