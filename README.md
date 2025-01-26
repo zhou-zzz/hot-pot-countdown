@@ -29,7 +29,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourusername/hot-pot-countdown.git
+git clone https://github.com/zhou-zzz/hot-pot-countdown.git
 
 # 安装依赖
 pnpm install
