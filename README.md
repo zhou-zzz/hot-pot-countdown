@@ -2,6 +2,12 @@
 
 一个简单实用的火锅食材计时器，帮助你完美把控火锅食材的烹饪时间！
 
+## 📱 预览
+
+<div align="center">
+  <img src="./src/assets/preview.png" alt="预览" width="300" />
+</div>
+
 ## ✨ 功能特点
 
 - 🍖 预设常见火锅食材的建议烹饪时间
