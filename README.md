@@ -5,7 +5,7 @@
 ## 📱 预览
 
 <div align="center">
-  <img src="./src/assets/preview.png" alt="预览" width="300" />
+  <img src="./src/assets/preview-1.png" alt="预览" width="300" />
 </div>
 
 ## ✨ 功能特点
